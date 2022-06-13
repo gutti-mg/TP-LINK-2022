@@ -28,7 +28,6 @@ public class CarritoDeCompras {
 	public void agregarItem(ItemCarrito item) throws tieneProductoRepetidoException{
 		if(tieneProductoRepetido(item)) {
 			throw new tieneProductoRepetidoException();
-
 		}
 		items.add(item);
 	}

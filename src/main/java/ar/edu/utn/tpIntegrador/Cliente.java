@@ -11,7 +11,9 @@ public class Cliente {
 	private String telefono;
 	private String email;
 	private List<OrdenCompra> comprasRealizadas;
-	private Enum<medioDePago> medioDePago;
+	//private Enum<medioDePago> medioDePago;
+	private String medioDePago;
+	private Boolean esSocio;
 	
 	public String getNombre() {
 		return nombre;
@@ -60,6 +62,13 @@ public class Cliente {
 	}
 	public void setMedioDePago(Enum<medioDePago> medioDePago) {
 		this.medioDePago = medioDePago;
+	}
+	
+	public Boolean esSocio() {
+		return esSocio;
+	}
+	public void setSocio(Boolean socio) {
+		this.esSocio = socio;
 	}
 
 }

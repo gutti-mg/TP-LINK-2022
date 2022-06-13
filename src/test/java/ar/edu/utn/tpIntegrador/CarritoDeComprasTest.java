@@ -15,7 +15,7 @@ public class CarritoDeComprasTest {
 		Collection<ItemCarrito> items = new ArrayList<ItemCarrito>();
 		Empleado empleado = new Empleado();
 		CarritoDeCompras  carritoDeCompras =  new CarritoDeCompras(items);
-		carritoDeCompras.agregarItem(new ItemCarrito(new Producto("Lapicera",70),6));
+		carritoDeCompras.agregarItem(new ItemCarrito(new Producto("Cartuchera",70),6));
 		
 		
 	}
