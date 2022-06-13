@@ -43,7 +43,7 @@ public class CarritoDeCompras {
 		return (this.getItems().contains(item))? true : false ;
 	}
 	
-	public boolean tieneProductoRepetido () {
+	public boolean tieneProductoRepetido (ItemCarrito item) {
 		return(this.getItems().stream().anyMatch(itemX->itemX.getProducto().equals(itemX.getProducto())))? true : false;
 		
 	}

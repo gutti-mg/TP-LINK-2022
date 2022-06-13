@@ -53,7 +53,7 @@ public class ItemCarrito {
 	}
 	
 	public double obtenerPrecio() {
-		return this.getProducto().getPrecio() * this.getCantidad());
+		return this.getProducto().getPrecio() * this.getCantidad();
 	}
 	
 	

@@ -7,12 +7,28 @@ public class Cupon {
 	
 	public Cupon(Descuento tipoDescuento, Proveedor proveedor) {
 	super();
-	this.proveedor = proveedor;
+	this.setProveedor(proveedor);
 	this.tipoDescuento= tipoDescuento;
 	}
 
 	protected int promo (int base) {
-		disponible = false;
+		setDisponible(false);
 		return base - tipoDescuento.descuento(base);
+	}
+
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
+
+	public Proveedor getProveedor() {
+		return proveedor;
+	}
+
+	public void setProveedor(Proveedor proveedor) {
+		this.proveedor = proveedor;
 	}
 }
