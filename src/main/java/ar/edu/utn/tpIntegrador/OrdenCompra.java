@@ -18,7 +18,7 @@ public class OrdenCompra {
 		}
 		TotalConDescuento = TotalSinDescuento + DescuentoPorSocio;	
 	
-	 if(tipoDePago=cliente.getMedioDePago()) {
+	 if(tipoDePago==cliente.getMedioDePago()) {
 		 switch (tipoDePago) { 
 		    /*case "BilleteraVirtual":
 		    if(billeteraVirtual.getMonto())
