@@ -14,12 +14,7 @@ public class Cliente {
 	//private Enum<medioDePago> medioDePago;
 	private String medioDePago;
 	private Boolean esSocio;
-	private CarritoDeCompras carritoCliente;
-
 	
-	public Cliente(String nombre) {
-		this.nombre = nombre;
-	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -62,34 +57,18 @@ public class Cliente {
 	public void setComprasRealizadas(List<OrdenCompra> comprasRealizadas) {
 		this.comprasRealizadas = comprasRealizadas;
 	}
-	
-	
-	/*public Enum<medioDePago> getMedioDePago() {
+	public Enum<medioDePago> getMedioDePago() {
 		return medioDePago;
 	}
 	public void setMedioDePago(Enum<medioDePago> medioDePago) {
 		this.medioDePago = medioDePago;
-	}*/
+	}
 	
 	public Boolean esSocio() {
 		return esSocio;
 	}
 	public void setSocio(Boolean socio) {
 		this.esSocio = socio;
-	}
-	public String getMedioDePago() {
-		return medioDePago;
-	}
-	public void setMedioDePago(String medioDePago) {
-		this.medioDePago = medioDePago;
-	}
-
-	public CarritoDeCompras getCarritoCliente() {
-		return carritoCliente;
-	}
-
-	public void setCarritoCliente(CarritoDeCompras carritoCliente) {
-		this.carritoCliente = carritoCliente;
 	}
 
 }
