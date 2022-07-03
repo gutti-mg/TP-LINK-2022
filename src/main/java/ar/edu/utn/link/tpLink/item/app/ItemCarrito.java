@@ -1,6 +1,7 @@
 package ar.edu.utn.link.tpLink.item.app;
 
 import java.util.Objects;
+import java.util.Optional;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -36,6 +37,9 @@ public class ItemCarrito {
 		this.item_id = item_id;
 	}
 
+	protected ItemCarrito () {
+
+	}
 	
 	public ItemCarrito (Producto producto, int cantidad) {
 		super();

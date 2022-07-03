@@ -2,8 +2,6 @@ package ar.edu.utn.link.tpLink.carrito.app;
 
 import java.util.Collection;
 
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,6 +26,7 @@ public class Carrito {
 	
 	@OneToMany
 	private Collection<ItemCarrito> items;
+
 
 	protected Carrito(){
 		super();
